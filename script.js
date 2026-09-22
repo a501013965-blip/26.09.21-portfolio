@@ -608,13 +608,13 @@
         <div class="m-carousel">
           <span class="mc-ind"></span>
           <div class="mc-viewport"><div class="mc-track">
-            <div class="mc-slide"><img src="assets/kk-data.png" alt="作品排期与数据跟踪表"><div class="mc-cap">作品排期与数据跟踪表（Excel）：曝光、CTR 与人群包规模，重点作品已标注</div></div>
-            <div class="mc-slide"><img src="assets/kuikan-1.jpg" alt="站内推广素材示例"><div class="mc-cap">站内推广素材示例</div></div>
-            <div class="mc-slide"><img src="assets/kk-banner.jpg" alt="作品宣传图"><div class="mc-cap">站内推广素材：作品宣传图</div></div>
-            <div class="mc-slide"><img src="assets/kk-poster.jpg" alt="作品海报"><div class="mc-cap">站内推广素材：作品海报</div></div>
-            <div class="mc-slide"><img src="assets/kuikan-4.jpg" alt="开屏广告素材"><div class="mc-cap">开屏广告素材</div></div>
-            <div class="mc-slide"><img src="assets/kk-office.jpg" alt="快看漫画办公室"><div class="mc-cap">快看漫画办公室</div></div>
-            <div class="mc-slide"><img src="assets/kk-badge.jpg" alt="实习期间"><div class="mc-cap">实习期间：工牌与作品立牌</div></div>
+            <div class="mc-slide"><img src="assets/kk-data.webp" alt="作品排期与数据跟踪表"><div class="mc-cap">作品排期与数据跟踪表（Excel）：曝光、CTR 与人群包规模，重点作品已标注</div></div>
+            <div class="mc-slide"><img src="assets/kuikan-1.webp" alt="站内推广素材示例"><div class="mc-cap">站内推广素材示例</div></div>
+            <div class="mc-slide"><img src="assets/kk-banner.webp" alt="作品宣传图"><div class="mc-cap">站内推广素材：作品宣传图</div></div>
+            <div class="mc-slide"><img src="assets/kk-poster.webp" alt="作品海报"><div class="mc-cap">站内推广素材：作品海报</div></div>
+            <div class="mc-slide"><img src="assets/kuikan-4.webp" alt="开屏广告素材"><div class="mc-cap">开屏广告素材</div></div>
+            <div class="mc-slide"><img src="assets/kk-office.webp" alt="快看漫画办公室"><div class="mc-cap">快看漫画办公室</div></div>
+            <div class="mc-slide"><img src="assets/kk-badge.webp" alt="实习期间"><div class="mc-cap">实习期间：工牌与作品立牌</div></div>
           </div></div>
           <button class="mc-btn mc-prev" type="button" aria-label="上一张">←</button>
           <button class="mc-btn mc-next" type="button" aria-label="下一张">→</button>
@@ -642,8 +642,8 @@
           <div class="m-card"><div class="t">配套文档与迭代闭环</div><div class="d">道具提示逻辑文档、调研报告与竞品拆解；老产品迭代与海外用户反馈处理跟进</div></div>
         </div>
         <div class="m-imgs">
-          <div class="m-img"><img src="assets/hami-gdd1.png" alt="连胜挑战活动文档截图"><div class="m-cap">原文档截图（已脱敏）：连胜挑战活动系统设计</div></div>
-          <div class="m-img"><img src="assets/hami-gdd2.png" alt="核心玩法与数值文档截图"><div class="m-cap">原文档截图（已脱敏）：核心玩法与数值</div></div>
+          <div class="m-img"><img src="assets/hami-gdd1.webp" alt="连胜挑战活动文档截图"><div class="m-cap">原文档截图（已脱敏）：连胜挑战活动系统设计</div></div>
+          <div class="m-img"><img src="assets/hami-gdd2.webp" alt="核心玩法与数值文档截图"><div class="m-cap">原文档截图（已脱敏）：核心玩法与数值</div></div>
         </div>
         <div class="m-note">文档原文为内部飞书文档，此处按原文结构重排并脱敏：隐去公司内部信息与部分数值。</div>`
     },
@@ -660,7 +660,7 @@
           <div class="m-card"><div class="t">设计三阶段引导流程</div><div class="d">先肯定、再引导、最后反思，替代「直接给答案」</div></div>
         </div>
         <div class="m-label">R 结果 / 产出</div>
-        <div class="m-img" style="margin-top:0"><img src="assets/sycosense-arch.png" alt="SycoSense 架构与交互流程图"></div>
+        <div class="m-img" style="margin-top:0"><img src="assets/sycosense-arch.webp" alt="SycoSense 架构与交互流程图"></div>
         <div class="m-grid">
           <div class="m-card"><div class="t">可交互原型</div><div class="d">Lovable 生成，跑通完整对话流程</div></div>
           <div class="m-card"><div class="t">四模块架构</div><div class="d">Orchestrator 统一调度 Simulator / Coach / Evaluator</div></div>
@@ -679,7 +679,7 @@
           <div class="m-card"><div class="t">设计硬件-软件联动架构</div><div class="d">打通 EEG 监测设备、音乐播放与气味扩散系统，与软件侧 AI 算法、用户管理模块的协同</div></div>
         </div>
         <div class="m-label">R 结果 / 产出</div>
-        <div class="m-img" style="margin-top:0"><img src="assets/neuroart.png" alt="NeuroArt 项目设计稿"></div>
+        <div class="m-img" style="margin-top:0"><img src="assets/neuroart.webp" alt="NeuroArt 项目设计稿"></div>
         <div class="m-grid">
           <div class="m-card"><div class="n">1 份</div><div class="t">功能需求文档</div><div class="d">硬件与软件联动的完整功能定义</div></div>
           <div class="m-card"><div class="n">1 套</div><div class="t">完整设计稿</div><div class="d">疗愈方案推荐 / 实时监控与 AIGC 定制 / 神经反馈标记体系 / 270° 沉浸剧场</div></div>
@@ -711,13 +711,13 @@
         <div class="m-carousel">
           <span class="mc-ind"></span>
           <div class="mc-viewport"><div class="mc-track">
-            <div class="mc-slide"><img src="assets/kk-data.png" alt="Content schedule & tracking sheet"><div class="mc-cap">Content schedule & tracking sheet (Excel): impressions, CTR and audience-pack size, key titles highlighted</div></div>
-            <div class="mc-slide"><img src="assets/kuikan-1.jpg" alt="In-app promotion material"><div class="mc-cap">In-app promotion material sample</div></div>
-            <div class="mc-slide"><img src="assets/kk-banner.jpg" alt="Promotional artwork"><div class="mc-cap">In-app promotion: title artwork</div></div>
-            <div class="mc-slide"><img src="assets/kk-poster.jpg" alt="Title artwork"><div class="mc-cap">In-app promotion: title artwork</div></div>
-            <div class="mc-slide"><img src="assets/kuikan-4.jpg" alt="Splash ad material"><div class="mc-cap">Splash-screen ad material</div></div>
-            <div class="mc-slide"><img src="assets/kk-office.jpg" alt="Kuaikan office"><div class="mc-cap">Kuaikan Comics office</div></div>
-            <div class="mc-slide"><img src="assets/kk-badge.jpg" alt="During the internship"><div class="mc-cap">During the internship: badge & figurine</div></div>
+            <div class="mc-slide"><img src="assets/kk-data.webp" alt="Content schedule & tracking sheet"><div class="mc-cap">Content schedule & tracking sheet (Excel): impressions, CTR and audience-pack size, key titles highlighted</div></div>
+            <div class="mc-slide"><img src="assets/kuikan-1.webp" alt="In-app promotion material"><div class="mc-cap">In-app promotion material sample</div></div>
+            <div class="mc-slide"><img src="assets/kk-banner.webp" alt="Promotional artwork"><div class="mc-cap">In-app promotion: title artwork</div></div>
+            <div class="mc-slide"><img src="assets/kk-poster.webp" alt="Title artwork"><div class="mc-cap">In-app promotion: title artwork</div></div>
+            <div class="mc-slide"><img src="assets/kuikan-4.webp" alt="Splash ad material"><div class="mc-cap">Splash-screen ad material</div></div>
+            <div class="mc-slide"><img src="assets/kk-office.webp" alt="Kuaikan office"><div class="mc-cap">Kuaikan Comics office</div></div>
+            <div class="mc-slide"><img src="assets/kk-badge.webp" alt="During the internship"><div class="mc-cap">During the internship: badge & figurine</div></div>
           </div></div>
           <button class="mc-btn mc-prev" type="button" aria-label="Previous">←</button>
           <button class="mc-btn mc-next" type="button" aria-label="Next">→</button>
@@ -745,8 +745,8 @@
           <div class="m-card"><div class="t">Supporting docs & iteration loop</div><div class="d">Item hint logic doc, research report and competitor teardown; legacy product iteration and overseas user feedback follow-up</div></div>
         </div>
         <div class="m-imgs">
-          <div class="m-img"><img src="assets/hami-gdd1.png" alt="Streak challenge event doc screenshot"><div class="m-cap">Original doc screenshot (anonymized): streak challenge event system design</div></div>
-          <div class="m-img"><img src="assets/hami-gdd2.png" alt="Core gameplay doc screenshot"><div class="m-cap">Original doc screenshot (anonymized): core gameplay & numbers</div></div>
+          <div class="m-img"><img src="assets/hami-gdd1.webp" alt="Streak challenge event doc screenshot"><div class="m-cap">Original doc screenshot (anonymized): streak challenge event system design</div></div>
+          <div class="m-img"><img src="assets/hami-gdd2.webp" alt="Core gameplay doc screenshot"><div class="m-cap">Original doc screenshot (anonymized): core gameplay & numbers</div></div>
         </div>
         <div class="m-note">Original docs were internal Feishu documents, restructured and anonymized for this portfolio: internal company information and some values removed.</div>`
     },
@@ -763,7 +763,7 @@
           <div class="m-card"><div class="t">Three-stage guidance flow</div><div class="d">Affirm first, then guide, finally reflect — replacing "just give the answer"</div></div>
         </div>
         <div class="m-label">R Results / Deliverables</div>
-        <div class="m-img" style="margin-top:0"><img src="assets/sycosense-arch.png" alt="SycoSense architecture & interaction flow"></div>
+        <div class="m-img" style="margin-top:0"><img src="assets/sycosense-arch.webp" alt="SycoSense architecture & interaction flow"></div>
         <div class="m-grid">
           <div class="m-card"><div class="t">Interactive prototype</div><div class="d">Generated with Lovable; full dialogue flow works end to end</div></div>
           <div class="m-card"><div class="t">Four-module architecture</div><div class="d">Orchestrator coordinating Simulator / Coach / Evaluator</div></div>
@@ -782,7 +782,7 @@
           <div class="m-card"><div class="t">Hardware–software linkage architecture</div><div class="d">Connecting EEG monitoring, music playback and scent diffusion with software-side AI algorithms and user management</div></div>
         </div>
         <div class="m-label">R Results / Deliverables</div>
-        <div class="m-img" style="margin-top:0"><img src="assets/neuroart.png" alt="NeuroArt design plates"></div>
+        <div class="m-img" style="margin-top:0"><img src="assets/neuroart.webp" alt="NeuroArt design plates"></div>
         <div class="m-grid">
           <div class="m-card"><div class="n">1</div><div class="t">Feature requirements doc</div><div class="d">Complete functional definition of the hardware–software linkage</div></div>
           <div class="m-card"><div class="n">1</div><div class="t">Complete design set</div><div class="d">Therapy recommendations / real-time monitoring & AIGC customization / neuro-feedback tagging / 270° immersive theater</div></div>
