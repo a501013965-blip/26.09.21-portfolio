@@ -611,7 +611,7 @@
             <div class="mc-slide"><img src="assets/kk-data.png" alt="作品排期与数据跟踪表"><div class="mc-cap">作品排期与数据跟踪表（Excel）：曝光、CTR 与人群包规模，重点作品已标注</div></div>
             <div class="mc-slide"><img src="assets/kuikan-1.jpg" alt="站内推广素材示例"><div class="mc-cap">站内推广素材示例</div></div>
             <div class="mc-slide"><img src="assets/kk-banner.jpg" alt="作品宣传图"><div class="mc-cap">站内推广素材：作品宣传图</div></div>
-            <div class="mc-slide"><img src="assets/kk-poster.jpg" alt="作品宣传图"><div class="mc-cap">站内推广素材：作品宣传图</div></div>
+            <div class="mc-slide"><img src="assets/kk-poster.jpg" alt="作品海报"><div class="mc-cap">站内推广素材：作品海报</div></div>
             <div class="mc-slide"><img src="assets/kuikan-4.jpg" alt="开屏广告素材"><div class="mc-cap">开屏广告素材</div></div>
             <div class="mc-slide"><img src="assets/kk-office.jpg" alt="快看漫画办公室"><div class="mc-cap">快看漫画办公室</div></div>
             <div class="mc-slide"><img src="assets/kk-badge.jpg" alt="实习期间"><div class="mc-cap">实习期间：工牌与作品立牌</div></div>
@@ -1034,4 +1034,5 @@
     placeLine();
     go(0);
   }
+
 })();

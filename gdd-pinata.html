@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>系统设计文档 ① · 连胜挑战活动 · 郭凯轩</title>
+<meta name="description" content="连胜挑战活动玩法梳理文档——内部文档脱敏重写版。">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="progress"><div class="progress-bar"></div></div>
+
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html#work" class="brand brand-back" title="返回实习">← 返回实习</a>
+    <button class="menu-btn" aria-label="菜单">≡</button>
+    <div class="nav-links">
+      <a href="index.html">简介</a>
+      <a href="index.html#work">实习</a>
+      <a href="index.html#works">项目</a>
+      <a href="index.html#skill">技能</a>
+      <a href="resume/郭凯轩-武汉大学-27届.pdf" download>下载简历</a>
+    </div>
+  </div>
+</nav>
+
+<div class="article-with-aside">
+  <aside class="toc">
+    <h4>本文目录</h4>
+    <a href="#note">说明</a>
+    <a href="#overview">活动概述</a>
+    <a href="#unlock">活动开启</a>
+    <a href="#rules">核心规则</a>
+    <a href="#next">下一篇</a>
+  </aside>
+
+  <article class="article">
+    <header>
+      <span class="eyebrow">系统设计文档 · 哈米科技 · 2026</span>
+      <h1>连胜挑战活动<br>玩法梳理文档</h1>
+      <div class="meta">
+        <span>哈米科技 · 游戏策划实习生</span>
+        <span>2026.05 – 2026.08</span>
+        <span>原文档已按内部规范脱敏</span>
+      </div>
+    </header>
+
+    <section id="note">
+      <div class="callout">
+        <strong>说明</strong>
+        本文档写于哈米科技实习期间，原文为内部飞书文档。这里按原文结构重排，隐去了公司内部信息与部分数值。
+      </div>
+    </section>
+
+    <section id="overview">
+      <h2><span class="section-num">01</span>活动概述</h2>
+      <p>Piñata 活动是一项 <strong>24 小时限时、三阶段连胜解锁型</strong>的奖励活动。玩家需连续通关积累连胜进度，依次解锁 Lucky Egg / Rare Egg / Epic Egg 三个彩蛋，三阶段难度与奖励同步递增，且<strong>不可跳阶段，必须按顺序依次完成</strong>。</p>
+    </section>
+
+    <section id="unlock">
+      <h2><span class="section-num">02</span>活动开启</h2>
+
+      <h3>2.1 开启条件</h3>
+      <ul>
+        <li>玩家关卡数达到指定关卡数时，<strong>自动加入活动，无需手动报名</strong></li>
+        <li>未达到解锁条件的玩家，<strong>不显示活动入口</strong>（区别于此前版本"解锁后置灰显示"的方案）</li>
+      </ul>
+
+      <h3>2.2 刷新条件</h3>
+      <ul>
+        <li>以<strong>玩家设备本地时间</strong>为准，每日 0 点开启新一轮活动，不依赖服务器端统一时间</li>
+        <li>前一日未完成的任务进度在 0 点后<strong>清零重置</strong>，不累积到次日</li>
+      </ul>
+
+      <div class="callout">
+        <strong>待确认的计时歧义</strong>
+        上述"每日 0 点重置"与前文"24 小时限时活动"的表述存在潜在冲突，涉及玩家首次解锁时的计时方式，需产品明确采用以下哪种模型：
+        <br><br><strong>模型 A（按自然日对齐）</strong>：无论解锁时刻，统一在"当日 24:00"重置，首轮倒计时长可能不足 24 小时；
+        <br><strong>模型 B（按 24 小时计时）</strong>：从解锁时刻起满 24 小时后重置，每轮时长固定但重置时间点因人而异。
+      </div>
+    </section>
+
+    <section id="rules">
+      <h2><span class="section-num">03</span>核心规则</h2>
+
+      <h3>3.1 三阶段任务</h3>
+      <div style="overflow-x:auto;margin:24px 0;border:1px solid var(--rule)">
+        <table style="width:100%;border-collapse:collapse;font-size:15px">
+          <thead>
+            <tr style="background:var(--paper-2);text-align:left">
+              <th style="padding:14px 16px;font-weight:600;border-bottom:1px solid var(--rule)">阶段</th>
+              <th style="padding:14px 16px;font-weight:600;border-bottom:1px solid var(--rule)">名称</th>
+              <th style="padding:14px 16px;font-weight:600;border-bottom:1px solid var(--rule)">连胜要求</th>
+              <th style="padding:14px 16px;font-weight:600;border-bottom:1px solid var(--rule)">彩蛋色系</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td style="padding:14px 16px;border-bottom:1px solid var(--rule)">1</td><td style="padding:14px 16px;border-bottom:1px solid var(--rule)">Lucky Egg</td><td style="padding:14px 16px;border-bottom:1px solid var(--rule)">3 连胜</td><td style="padding:14px 16px;border-bottom:1px solid var(--rule)">绿色系</td></tr>
+            <tr><td style="padding:14px 16px;border-bottom:1px solid var(--rule)">2</td><td style="padding:14px 16px;border-bottom:1px solid var(--rule)">Rare Egg</td><td style="padding:14px 16px;border-bottom:1px solid var(--rule)">5 连胜</td><td style="padding:14px 16px;border-bottom:1px solid var(--rule)">蓝色系</td></tr>
+            <tr><td style="padding:14px 16px;border-bottom:1px solid var(--rule)">3</td><td style="padding:14px 16px;border-bottom:1px solid var(--rule)">Epic Egg</td><td style="padding:14px 16px;border-bottom:1px solid var(--rule)">7 连胜</td><td style="padding:14px 16px;border-bottom:1px solid var(--rule)">紫色系</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>三阶段为<strong>线性递进关系</strong>，必须按顺序依次解锁，不可跳过。</p>
+
+      <h3>3.2 进度累积与重置</h3>
+      <ul>
+        <li><strong>每胜利一局</strong>，关卡等级上方的进度点亮（home 页与关卡结算页同步点亮）</li>
+        <li><strong>失败重置</strong>：任一阶段中途失败，连胜进度立即归零，当前阶段从头开始计数</li>
+      </ul>
+      <p>示例：玩家在 Rare Egg 阶段已取得 3 连胜，第 4 关失败 → 连胜归零，回到 Rare Egg 阶段初始状态（<strong>不会倒退回上一阶段</strong>，仅在当前阶段内清零）。</p>
+
+      <h3>3.3 失败挽留弹窗</h3>
+      <p>连胜中断（关卡失败）时，弹出挽留弹窗，提供轻量级的进度恢复手段，降低玩家因连胜清零而产生的挫败感与流失风险。</p>
+    </section>
+
+    <hr class="hr">
+
+    <section id="next">
+      <h2>下一篇</h2>
+      <p>下一篇是同一时期撰写的核心玩法/数值/关卡节奏文档，从品类本质判断到道具系统与难度曲线。<a href="gdd-sheepdash.html" style="color:var(--accent);font-weight:600">点击阅读 →</a></p>
+    </section>
+  </article>
+</div>
+
+<!-- Lightbox -->
+<div class="lb" id="lightbox">
+  <button class="lb-close" aria-label="关闭">×</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

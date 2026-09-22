@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>SycoSense · 郭凯轩</title>
+<meta name="description" content="硕士研究项目：AI 谄媚识别对话原型，从理论到架构到设计决策。">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="progress"><div class="progress-bar"></div></div>
+
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html#works" class="brand brand-back" title="返回项目">← 返回项目</a>
+    <button class="menu-btn" aria-label="菜单">≡</button>
+    <div class="nav-links">
+      <a href="index.html">简介</a>
+      <a href="index.html#work">实习</a>
+      <a href="index.html#works">项目</a>
+      <a href="index.html#skill">技能</a>
+      <a href="resume/郭凯轩-武汉大学-27届.pdf" download>下载简历</a>
+    </div>
+  </div>
+</nav>
+
+<div class="article-with-aside">
+  <aside class="toc">
+    <h4>本文目录</h4>
+    <a href="#problem">问题</a>
+    <a href="#theory">我的做法</a>
+    <a href="#arch">架构</a>
+  </aside>
+
+  <article class="article">
+    <header>
+      <span class="eyebrow">硕士研究项目 · 人机交互与用户体验度量 · 2026</span>
+      <h1>SycoSense<br>AI 谄媚识别对话原型</h1>
+      <div class="meta">
+        <span>武大图情硕 · 研究方向 UX 度量</span>
+        <span>独立完成 · 仍在迭代</span>
+        <span>Lovable / Coze / Cursor</span>
+      </div>
+    </header>
+
+    <section id="problem">
+      <h2><span class="section-num">01</span>问题：AI 谄媚（Sycophancy）</h2>
+      <p>在教育场景里使用 AI 工具时，我发现一个普遍现象：<strong>无论我问什么，AI 都先说"你说得对"、"这个想法很棒"、"很好的观点"</strong>。</p>
+      <p>这种"谄媚"让用户得不到真实的反馈，反而误导学习和决策。一个被反复肯定的学生，不会去质疑自己的错误；而真正的学习恰恰需要<strong>被挑战</strong>。这个项目的目标，就是设计一个能给出真实反馈、而不是一味附和的对话系统。</p>
+    </section>
+
+    <section id="theory">
+      <h2><span class="section-num">02</span>我的做法：边界 → 多工具 → 端到端</h2>
+      <p><strong>先明确需求边界</strong>：这个系统只做教育场景下的对话反馈，不是通用聊天助手——它要识别"谄媚"式回复，把对话引导向真实反馈。边界定了，后面的模块拆分和话术设计才有依据。</p>
+      <p><strong>再尝试多工具，各取所长</strong>：三阶段引导流程（肯定 → 引导 → 反思）由 Claude 出框架初稿、我逐条改；对话逻辑在 Coze 里搭建并跑剧本验证；可交互原型用 Lovable 生成。</p>
+      <p><strong>最后端到端串联</strong>：从需求边界，到三阶段流程，再到下面 03 的四模块架构和可交互原型，整条链路我自己跑通——每个环节的产出都是下一个环节的输入。</p>
+    </section>
+
+    <section id="arch">
+      <h2><span class="section-num">03</span>架构</h2>
+      <p>我把系统拆成四个模块，每个模块有明确职责。这个拆分是参考了智能体设计相关文章后确定的——避免一个 prompt 包打天下。</p>
+
+      <div class="figure">
+        <img src="assets/sycosense-arch.png" alt="SycoSense 架构与交互流程图" data-zoom>
+        <figcaption>整体架构图（上）与三阶段交互流程示意图（下）：Orchestrator / Simulator / Coach / Evaluator</figcaption>
+      </div>
+
+      <ul>
+        <li><strong>Orchestrator（编排器）</strong>：判断当前对话处于哪个阶段（肯定 → 引导 → 反思），调度其他模块</li>
+        <li><strong>Simulator（场景模拟器）</strong>：根据用户输入生成"苏格拉底式提问"，而非直接回答</li>
+        <li><strong>Coach（教练）</strong>：当用户主动要求帮助时，给出具体的引导话术</li>
+        <li><strong>Evaluator（评估器）</strong>：对话结束后给用户一份"反思清单"——指出哪里答得好、哪里可以再思考</li>
+      </ul>
+
+      <div class="figure" style="margin-top:48px">
+        <img src="assets/sycosense-ui.png" alt="SycoSense 原型界面" data-zoom>
+        <figcaption>原型界面截图：对话视图 + 阶段指示器 + 反思清单入口</figcaption>
+      </div>
+    </section>
+
+  </article>
+</div>
+
+<!-- Lightbox -->
+<div class="lb" id="lightbox">
+  <button class="lb-close" aria-label="关闭">×</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

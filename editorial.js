@@ -7,7 +7,7 @@
     zh:{
       'meta.title':'郭凯轩 · 作品集',
       'nav.about':'简介','nav.work':'实习','nav.projects':'项目','nav.skills':'技能','nav.resume':'下载简历','nav.contact':'联系我',
-      'hero.eyebrow':'郭凯轩 — 本科会计学 · 武汉大学图书情报硕士 · 27 届',
+      
       'hero.l1':'内容有依据，','hero.l2':'产出能落地。',
       'hero.meta1':'求职意向：市场 / 运营 / 策划 / 用研','hero.meta2':'27 届 · 立即到岗',
       'hero.ctaWork':'查看作品','hero.ctaResume':'下载简历','hero.avatarCap':'Wuhan University · Class of 2027',
@@ -55,7 +55,7 @@
     en:{
       'meta.title':'Guo Kaixuan · Portfolio',
       'nav.about':'About','nav.work':'Internship','nav.projects':'Projects','nav.skills':'Skills','nav.resume':'Resume','nav.contact':'Contact',
-      'hero.eyebrow':'Guo Kaixuan — B.Acct · MLIS, Wuhan University · Class of 2027',
+      
       'hero.l1':'Content with evidence.','hero.l2':'Output that ships.',
       'hero.meta1':'Target roles: Marketing / Operations / Planning / UX Research','hero.meta2':'Class of 2027 · Available immediately',
       'hero.ctaWork':'View Work','hero.ctaResume':'Download Resume','hero.avatarCap':'Wuhan University · Class of 2027',

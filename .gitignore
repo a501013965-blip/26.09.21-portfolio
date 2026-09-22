@@ -1,0 +1,15 @@
+# Helper scripts in assets/ (local-only, not part of site)
+assets/_*.py
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+
+# Logs / scratch
+*.log

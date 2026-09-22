@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>我的 AI 工作流 · 郭凯轩</title>
+<meta name="description" content="按用途组织的 AI 工具栈，以及三个真实项目的工具链拆解。">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="brand brand-back" title="返回简介">← 返回简介</a>
+    <button class="menu-btn" aria-label="菜单">≡</button>
+    <div class="nav-links">
+      <a href="index.html">简介</a>
+      <a href="index.html#work">实习</a>
+      <a href="index.html#works">项目</a>
+      <a href="index.html#skill">技能</a>
+      <a href="resume/郭凯轩-武汉大学-27届.pdf" download>下载简历</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero wrap">
+  <div>
+    <span class="eyebrow">AI 协作</span>
+    <h1>AI 在我的工作里，<br>具体解决了什么。</h1>
+    <p class="hero-lead" style="margin-top:32px">
+      按用途分组的工具栈、三个真实项目的工具链拆解。每个环节标注了 AI 做了什么、我在哪里接手。
+    </p>
+  </div>
+</section>
+
+<section class="section wrap">
+  <div class="sec-head reveal">
+    <div class="left">
+      <span class="eyebrow">工具栈地图</span>
+      <h2>工具栈：<br>按使用的环节分组。</h2>
+    </div>
+    <p class="desc">每组标注实际用途。工具本身没有信息量，用在哪个环节、解决什么问题才有。</p>
+  </div>
+
+  <div class="tool-stack reveal">
+    <div class="tool-group">
+      <h4>① 研究 & 信息处理</h4>
+      <div class="tool-row">
+        <span class="tool"><i class="dot"></i>ChatGPT</span>
+        <span class="tool"><i class="dot"></i>Claude</span>
+        <span class="tool"><i class="dot"></i>Perplexity</span>
+        <span class="tool"><i class="dot"></i>NotebookLM</span>
+      </div>
+      <p class="footnote" style="margin-top:12px">用途：文献综述、竞品速读、长文档摘要、问卷初稿</p>
+    </div>
+
+    <div class="tool-group">
+      <h4>② 原型 & 可视化</h4>
+      <div class="tool-row">
+        <span class="tool"><i class="dot"></i>Lovable</span>
+        <span class="tool"><i class="dot"></i>Cursor</span>
+        <span class="tool"><i class="dot"></i>Figma</span>
+      </div>
+      <p class="footnote" style="margin-top:12px">用途：从文字描述生成可交互原型（SycoSense 就是 Lovable 搭的）、代码生成</p>
+    </div>
+
+    <div class="tool-group">
+      <h4>③ 数据 & 分析</h4>
+      <div class="tool-row">
+        <span class="tool"><i class="dot"></i>Coze</span>
+        <span class="tool"><i class="dot"></i>飞书多维表格</span>
+        <span class="tool"><i class="dot"></i>Excel + Copilot</span>
+      </div>
+      <p class="footnote" style="margin-top:12px">用途：自动化数据汇总、用自然语言查表、生成日报模板</p>
+    </div>
+
+    <div class="tool-group">
+      <h4>④ 内容 & 排版</h4>
+      <div class="tool-row">
+        <span class="tool"><i class="dot"></i>Canva AI</span>
+        <span class="tool"><i class="dot"></i>Notion AI</span>
+      </div>
+      <p class="footnote" style="margin-top:12px">用途：PPT 排版与视觉素材、文档润色</p>
+    </div>
+  </div>
+</section>
+
+<section class="section wrap" style="background:var(--paper-2);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="left">
+        <span class="eyebrow">真实工作流</span>
+        <h2>三个真实项目<br>的工具链。</h2>
+      </div>
+      <p class="desc">SycoSense 原型 · 快看复盘 SOP · 本作品集网站。每个案例列出工具链和每一步的分工。</p>
+    </div>
+
+    <div class="flow reveal">
+      <div class="flow-step">
+        <div class="n">01</div>
+        <div>
+          <h3>SycoSense 从论文到可交互原型</h3>
+          <div class="tools"><strong>工具链</strong> · Perplexity（文献）→ Claude（理论框架）→ Lovable（原型）→ Coze（对话逻辑测试）</div>
+          <p><strong>第一步</strong>用 Perplexity 把"AI 谄媚"相关的英文文献 30 篇筛到 8 篇核心。<strong>第二步</strong>把核心论文喂给 Claude，让它提炼出"认知学徒制"的三阶段引导流程——这是我自己读可能要一周，AI 帮我 2 小时拿到初稿。<strong>第三步</strong>把流程描述丢给 Lovable，30 分钟生成可交互原型。<strong>第四步</strong>用 Coze 模拟不同对话剧本，验证原型对话逻辑是否走得通。</p>
+          <p style="margin-top:12px;color:var(--muted);font-size:13px">关键：AI 不是"一键生成"，是<strong>每一段换最合适的工具</strong>。文献用搜索增强型，对话用代码生成型。</p>
+        </div>
+      </div>
+
+      <div class="flow-step">
+        <div class="n">02</div>
+        <div>
+          <h3>快看推荐位复盘文档：从数据到 SOP</h3>
+          <div class="tools"><strong>工具链</strong> · Excel + Copilot（数据透视）→ ChatGPT（结构化总结）→ Notion AI（SOP 润色）</div>
+          <p>实习结束前要给团队留一份复盘文档。我把三个月的 Excel 数据透视表截图丢给 ChatGPT，让它按"问题 → 归因 → 行动 → 结果 → 方法"的结构初稿化。然后人工补充"为什么这么做"的设计意图——这部分 AI 写不出来，因为它不知道我当时的思考过程。最后 Notion AI 润色语言、补充小标题。</p>
+          <p style="margin-top:12px;color:var(--muted);font-size:13px">关键：AI 处理<strong>结构</strong>，我处理<strong>判断</strong>。这一步让我从"做执行"升级到"产出方法论"。</p>
+        </div>
+      </div>
+
+      <div class="flow-step">
+        <div class="n">03</div>
+        <div>
+          <h3>本作品集网站的搭建</h3>
+          <div class="tools"><strong>工具链</strong> · Claude（信息架构）→ Cursor（代码生成）→ 人工（文案与图片取舍）</div>
+          <p>网站初稿由 Claude 输出信息架构与文案骨架，Cursor 把骨架转成可运行的 HTML/CSS/JS。所有文案我逐句重写过——AI 生成的初稿结构完整但语言平滑、缺少细节，我补上每个案例里的具体决策和数据，再砍掉多余的修辞。</p>
+          <p style="margin-top:12px;color:var(--muted);font-size:13px">关键：AI 处理重复劳动，我处理判断和取舍。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <h2>联系方式</h2>
+    <p class="lead">邮件、电话均可，简历可在任意页面右上角下载。</p>
+    <div class="links">
+      <a href="mailto:guokx4793@163.com">guokx4793@163.com</a>
+      <a href="tel:15972078092">159-7207-8092</a>
+      <a href="index.html">回到首页</a>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

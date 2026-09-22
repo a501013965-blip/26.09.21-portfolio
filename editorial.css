@@ -63,15 +63,17 @@ body::after{
 .mono{font-family:var(--mono)}
 .eyebrow-mono{
   font-family:var(--mono);font-size:13px;letter-spacing:.08em;
-  color:var(--ink-3);display:flex;align-items:center;gap:10px;
+  color:var(--ink-3);display:block;line-height:2;
 }
-.eyebrow-mono::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0}
+.eyebrow-mono::before{content:'';display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);margin-right:10px;vertical-align:middle}
+.eyebrow-mono b{color:var(--ink);font-weight:600}
+.eyebrow-mono .sep{margin:0 10px;color:var(--accent)}
 .serif-note{
   font-family:var(--serif);font-style:italic;font-weight:400;
   color:var(--accent);letter-spacing:.02em;
 }
-.sec{padding:112px 24px}
-.sec-head{margin-bottom:56px;position:relative}
+.sec{padding:76px 24px}
+.sec-head{margin-bottom:40px;position:relative}
 .sec-head .kicker{
   font-family:var(--mono);font-size:12.5px;letter-spacing:.16em;
   text-transform:uppercase;color:var(--ink-3);margin-bottom:14px;
@@ -138,7 +140,7 @@ body::after{
 }
 
 /* ═══ HERO：两列经典排版 ═══ */
-.hero{padding:168px 24px 88px;position:relative}
+.hero{padding:124px 24px 64px;position:relative}
 /* 克制的十字定位标记 */
 .hero::before{
   content:'+';position:absolute;top:118px;right:44px;
@@ -243,8 +245,8 @@ html[lang="en"] .hero h1{font-size:clamp(36px,5.6vw,66px)}
 .scroll-hint i::after{content:'';position:absolute;inset:0;background:var(--ink-3);transform:translateX(-100%);animation:hintLine 2.2s ease-in-out infinite}
 @keyframes hintLine{0%{transform:translateX(-100%)}55%{transform:translateX(0)}100%{transform:translateX(100%)}}
 @media(max-width:900px){
-  .hero{padding:132px 24px 64px}
-  .hero-grid{grid-template-columns:1fr;gap:48px}
+  .hero{padding:108px 24px 52px}
+  .hero-grid{grid-template-columns:1fr;gap:40px}
   .acc{justify-self:start;width:100%;height:330px;min-height:0}
   .acc-cap .cf{font-size:9px}
   .acc-cap .cs{font-size:9px;letter-spacing:.2em;text-indent:.2em}
@@ -499,7 +501,7 @@ html[lang="en"] .hero h1{font-size:clamp(36px,5.6vw,66px)}
 @media(max-width:980px){.skill-bento{grid-template-columns:1fr}}
 
 /* ═══ 联系：暖白收尾 + 小球 canvas ═══ */
-.contact{padding:150px 24px 110px;text-align:center;position:relative;overflow:clip}
+.contact{padding:104px 24px 80px;text-align:center;position:relative;overflow:clip}
 /* 同心圆环装饰（小球后面的一层几何线条） */
 .contact::before{
   content:'';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
